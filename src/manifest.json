@@ -40,9 +40,17 @@
     "page": "options.html"
   },
   "web_accessible_resources": [
-    "images/green.png",
-    "images/gray.png",
-    "images/red.png",
-    "images/yellow.png"
+    "images/green-1.png",
+    "images/red-1.png",
+    "images/yellow-1.png",
+    "images/green-2.png",
+    "images/red-2.png",
+    "images/yellow-2.png",
+    "images/green-3.png",
+    "images/red-3.png",
+    "images/yellow-3.png",
+    "images/green-4.png",
+    "images/red-4.png",
+    "images/yellow-4.png"
   ]
 }

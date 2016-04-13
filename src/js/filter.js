@@ -26,13 +26,13 @@ function fetch(auth, elements) {
         success: function(rt, ts, xhr) {
           var dt = rt.pushed_at;
           // var dt = rt.updated_at;
-          // // console.log(rt.stargazers_count);
+          var sg =rt.stargazers_count;
           remaining = xhr.getResponseHeader("X-RateLimit-Remaining");
 
           var t = new Date(Date.parse(dt));
           var dayCount = Math.floor((now -t) / (86400 * 1000));
 
-          var c = "gray";
+          var c = "red";
           if (dayCount < 10) {
             c = "green";
           } else if (dayCount > 30 ) {
@@ -40,9 +40,26 @@ function fetch(auth, elements) {
           } else {
             c = "yellow";
           }
-          var img = $('<img width="8" height="8" style="margin-bottom:3px;margin-left:4px;">');
+
+          sz = 8;
+          if (sg < 10) {
+            c = c + "-1";
+          } else if (sg < 100) {
+            sz = 9;
+            c = c + "-2";
+          } else if (sg < 1000) {
+            sz = 10;
+            c = c + "-3";
+          } else {
+            sz = 12;
+            c = c + "-4";
+          }
+
+          title = "Last push " + dayCount + " days ago |" + sg + " stars";
+
+          var img = $('<img width="' + sz + '" height="' + sz + '" style="margin-bottom:3px;margin-left:4px;">');
           img.attr('src', chrome.extension.getURL('images/' + c + '.png'));
-          img.attr('title', "Last push " + dayCount + " days ago");
+          img.attr('title', title );
           elt.append(img);
         }
       });
