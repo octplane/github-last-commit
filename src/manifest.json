@@ -1,12 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "Github Last Commit",
-  "version": "0.1",
-  "description": "Extract repository freshness and display as a badge",
+  "name": "Github Link Uberizer",
+  "version": "0.2",
+  "description": "Enhance github links in page where you navigate. Extract repository freshness and display as a badge",
   "page_action" :
   {
     "default_icon" : "images/icon-19x19.png",
-    "default_title" : "Repository Inspector."
+    "default_title" : "GLU."
   },
   "permissions": [
     "tabs",
