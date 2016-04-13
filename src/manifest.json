@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github Link Uberizer",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Enhance github links in page where you navigate. Extract repository freshness and display as a badge",
   "page_action" :
   {
