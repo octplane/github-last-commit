@@ -4,6 +4,11 @@ Install at: https://chrome.google.com/webstore/detail/github-link-uberizer/ijleb
 
 ![This is how it looks](https://raw.githubusercontent.com/octplane/github-last-commit/master/assets/example1.png)
 
+# Feature
+
+- show the last activity visually in front of a github link (red, not very active, yellow, a bit, blue was active recently)
+- shape is for popularity: the starier it is, the more popular the repository is. The rounder it is, the less popular.
+
 # Developers
 
 - Install `src` using developer tools in chrome. Generate token at Github and update its value in options panel.
@@ -21,8 +26,8 @@ Install at: https://chrome.google.com/webstore/detail/github-link-uberizer/ijleb
 - [x] Find better way to find the info than hammering Github.
 - [x] ~~Reinstate Analytics~~ Remove Analytics
 - [x] Publish on Chrome Store https://chrome.google.com/webstore/detail/github-link-uberizer/ijlebfifaaokdkglnokndelloojcieoc !
+- [x] ~~Display stargazers count~~ More or less
 - Cache result for ~~at least 5 minutes~~ 60 minutes
-- Display stargazers count
 - :question: Display found repositories in popup
 - Option Panel
 - ~~have the ability to find most recent branch~~
