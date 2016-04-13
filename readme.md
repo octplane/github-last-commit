@@ -1,8 +1,12 @@
 # Github last commit Chrome extension
 
+Install at: https://chrome.google.com/webstore/detail/github-link-uberizer/ijlebfifaaokdkglnokndelloojcieoc
+
 ![This is how it looks](https://raw.githubusercontent.com/octplane/github-last-commit/master/assets/example1.png)
 
-Install `src` using developer tools in chrome. Generate token at Github and update its value in options panel.
+# Developers
+
+- Install `src` using developer tools in chrome. Generate token at Github and update its value in options panel.
 
 # Inspiration and thanks
 
@@ -16,6 +20,7 @@ Install `src` using developer tools in chrome. Generate token at Github and upda
 - [x] Use Github API (requires login and access token, now)
 - [x] Find better way to find the info than hammering Github.
 - [x] ~~Reinstate Analytics~~ Remove Analytics
+- [x] Publish on Chrome Store https://chrome.google.com/webstore/detail/github-link-uberizer/ijlebfifaaokdkglnokndelloojcieoc !
 - Cache result for ~~at least 5 minutes~~ 60 minutes
 - Display stargazers count
 - :question: Display found repositories in popup
