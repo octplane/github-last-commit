@@ -36,6 +36,10 @@
   color:black;
 }
 
+.tooltip a.gh {
+  color:black;
+}
+
 
 /* This bridges the gap so you can mouse into the tooltip without it disappearing */
 .wrapper .tooltip:before {

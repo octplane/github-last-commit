@@ -55,11 +55,22 @@ function fetch(auth, elements) {
             c = c + "-4";
           }
 
-          title = "Last push " + dayCount + " days ago |" + sg + " stars";
+          var lang = rt.language;
+          var forks = rt.forks_count;
+          var issues = rt.open_issues_count;
+          var hp = rt.homepage;
+          var home = '';
+          if(hp != null && hp != "" &&  !hp.startsWith("https://github.com/")) {
+            home = '&nbsp;<a class="gh" href="' + hp + '">[Web]</a>';
+          }
+
+          
+
+          title = "Last push " + dayCount + " days ago, " + sg + " stars.<br>" + forks + " forks and " + issues +" opened issues.<br>In " + lang + ".";
 
           var packer = $('<span class="packer"></span>');
           var d = $('<div class="wrapper"></div>');
-          var tt = $('<div class="tooltip"><h6 class="gh6">'+ reponame +'</h6>' + title + '</div>');
+          var tt = $('<div class="tooltip"><h6 class="gh6">'+ reponame + home + '</h6>' + title + '</div>');
 
 
           var img = $('<img width="' + sz + '" height="' + sz + '" style="margin-bottom:3px;margin-left:4px;">');
