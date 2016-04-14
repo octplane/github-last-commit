@@ -33,25 +33,25 @@ function fetch(auth, elements) {
           var dayCount = Math.floor((now -t) / (86400 * 1000));
 
           var c = "red";
+          sz = 6;
           if (dayCount < 10) {
             c = "green";
+            sz = 12;
           } else if (dayCount > 30 ) {
             c = "red";
+            sz = 6;
           } else {
             c = "yellow";
+            sz = 9;
           }
 
-          sz = 8;
           if (sg < 10) {
             c = c + "-1";
           } else if (sg < 100) {
-            sz = 9;
             c = c + "-2";
           } else if (sg < 1000) {
-            sz = 10;
             c = c + "-3";
           } else {
-            sz = 12;
             c = c + "-4";
           }
 
