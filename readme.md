@@ -27,6 +27,7 @@ Install at: https://chrome.google.com/webstore/detail/github-link-uberizer/ijleb
 - [x] ~~Reinstate Analytics~~ Remove Analytics
 - [x] Publish on Chrome Store https://chrome.google.com/webstore/detail/github-link-uberizer/ijlebfifaaokdkglnokndelloojcieoc !
 - [x] ~~Display stargazers count~~ More or less
+- pre install bullets to avoid view dilation when ajax is running
 - Cache result for ~~at least 5 minutes~~ 60 minutes
 - :question: Display found repositories in popup
 - Option Panel
