@@ -19,6 +19,7 @@
         "https://*/*"
       ],
       "js": ["js/jquery-2.1.4.min.js", "js/filter.js"],
+      "css": ["css/mine.css"],
       "run_at": "document_idle",
       "all_frames": false
     }

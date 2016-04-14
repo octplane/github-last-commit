@@ -57,10 +57,15 @@ function fetch(auth, elements) {
 
           title = "Last push " + dayCount + " days ago |" + sg + " stars";
 
-          var img = $('<img width="' + sz + '" height="' + sz + '" style="margin-bottom:3px;margin-left:4px;">');
+          var d = $('<div class="wrapper"></div>');
+          var tt = $('<div class="tooltip"><h6 class="gh6">'+ reponame +'</h6>' + title + '</div>');
+
+
+          var img = $('<img class="wrapper" width="' + sz + '" height="' + sz + '" style="margin-bottom:3px;margin-left:4px;">');
           img.attr('src', chrome.extension.getURL('images/' + c + '.png'));
-          img.attr('title', title );
-          elt.append(img);
+          d.append(img);
+          d.append(tt);
+          elt.append(d);
         }
       });
     }
