@@ -1,10 +1,10 @@
-.packer {
+._glu_packer {
   display: inline-block;
   width: 16px;
   height: 16px;
 }
 
-.wrapper {
+._glu_wrapper {
   display: inline-block;
   -webkit-transform: translateZ(0); /* webkit flicker fix */
   -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
@@ -13,7 +13,7 @@
   height: 16px;
 }
 
-.wrapper .tooltip {
+._glu_wrapper ._glu_tooltip {
   background: #1496bb;
   bottom: 100%;
   color: #fff;
@@ -31,18 +31,18 @@
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
 }
 
-.tooltip h6.gh6 {
+._glu_tooltip h6._glu_gh6 {
   margin: 0px;
   color:black;
 }
 
-.tooltip a.gh {
+._glu_tooltip a._glu_gh {
   color:black;
 }
 
 
 /* This bridges the gap so you can mouse into the tooltip without it disappearing */
-.wrapper .tooltip:before {
+._glu_wrapper ._glu_tooltip:before {
   bottom: -20px;
   content: " ";
   display: block;
@@ -53,7 +53,7 @@
 }  
 
 /* CSS Triangles - see Trevor's post */
-.wrapper .tooltip:after {
+._glu_wrapper ._glu_tooltip:after {
   border-left: solid transparent 10px;
   border-right: solid transparent 10px;
   border-top: solid #1496bb 10px;
@@ -67,7 +67,7 @@
 }
   
 /* .wrapper:hover .tooltip { */
-.wrapper:hover .tooltip {
+._glu_wrapper:hover ._glu_tooltip {
   opacity: 1;
   pointer-events: auto;
   -webkit-transform: translateY(0px);
