@@ -94,7 +94,7 @@ if (search) {
      username: 'foo',
      token: 'bar'
    }, function(config) {
-	   elements = $('a[href^="https://github.com"]')
+	   elements = $('a[href*="github.com/"]')
 
      var tok = config.username + ':' + config.token;
      var hash = btoa(tok);
